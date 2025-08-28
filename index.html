@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emergency Hotline</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar" role="navigation">
+    <div class="nav-left">
+      <img id="brandLogo" src="assets/logo.png" alt="logo" class="nav-logo">
+      <div class="nav-title">Emergency Hotline</div>
+    </div>
+
+    <div class="nav-right">
+      <div class="top-pill">
+        <img src="assets/heart.png" alt="" class="pill-icon">
+        <span class="pill-text">Favorites</span>
+        <span id="favCount" class="pill-count">0</span>
+      </div>
+
+      <div class="top-pill">
+        <img src="assets/coin.png" alt="" class="pill-icon">
+        <span class="pill-text">Calls</span>
+        <span id="callCount" class="pill-count">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <img class="hero-siren" src="assets/emergency.png" alt="siren">
+    <div class="hero-text">
+      <h1>National Emergency Helplines</h1>
+      <p>Government emergency services at your fingertips — Bangladesh</p>
+    </div>
+  </header>
+
+  <!-- MAIN: centered content with cards + history -->
+  <main class="main-wrapper">
+    <div class="content">
+      <!-- Left: cards grid -->
+      <section class="cards" id="cardsContainer" aria-label="Emergency services">
+
+        <!-- Card: National Emergency -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip"><img src="assets/emergency.png" alt=""></div>
+              <div class="title">
+                <div class="card-title">National Emergency</div>
+                <div class="card-sub">All Services</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">999</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+        <!-- Card: Police -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip"><img src="assets/police.png" alt=""></div>
+              <div class="title">
+                <div class="card-title">Police Helpline</div>
+                <div class="card-sub">Police</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">999</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+        <!-- Card: Fire -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip"><img src="assets/fire-service.png" alt=""></div>
+              <div class="title">
+                <div class="card-title">Fire Service</div>
+                <div class="card-sub">Fire</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">999</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+        <!-- Card: Ambulance -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip"><img src="assets/ambulance.png" alt=""></div>
+              <div class="title">
+                <div class="card-title">Ambulance Service</div>
+                <div class="card-sub">Ambulance</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">1994-999999</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+        <!-- Card: Women & Child -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip chip-icon"><i class="fa-solid fa-venus"></i></div>
+              <div class="title">
+                <div class="card-title">Women & Child Helpline</div>
+                <div class="card-sub">Help</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">109</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+        <!-- Card: Electricity -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip chip-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="title">
+                <div class="card-title">Electricity Helpline</div>
+                <div class="card-sub">Electricity</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">16216</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+        <!-- Card: Bangladesh Railway -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip"><img src="assets/Bangladesh-Railway.png" alt=""></div>
+              <div class="title">
+                <div class="card-title">Bangladesh Railway</div>
+                <div class="card-sub">Railway</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">131</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+        <!-- Card: BRAC -->
+        <article class="card">
+          <header class="card-header">
+            <div class="head-left">
+              <div class="chip"><img src="assets/brac.png" alt=""></div>
+              <div class="title">
+                <div class="card-title">BRAC Healthline</div>
+                <div class="card-sub">Health</div>
+              </div>
+            </div>
+            <div class="head-right">
+              <i class="fa-solid fa-lock small-muted"></i>
+              <button class="icon-btn fav-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </header>
+          <div class="card-number">105</div>
+          <div class="card-actions">
+            <button class="btn btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn btn-call"><i class="fa-solid fa-phone"></i> Call</button>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Right: history -->
+      <aside class="history">
+        <div class="history-head">
+          <h3><i class="fa-solid fa-clock-rotate-left"></i> Call History</h3>
+          <button id="clearHistory" class="btn btn-outline">Clear</button>
+        </div>
+        <ul id="historyList" class="history-list" aria-live="polite"></ul>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
